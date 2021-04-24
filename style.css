@@ -67,11 +67,19 @@ body {
 
 .item__perfil{
   position: relative;
+
 }
 
 .item__perfil img {
   width: 238px;
   height: 347px;
+  transition: filter ease-in-out .6s,  transform ease-in-out .6s;
+
+}
+
+.item__perfil img:hover {
+  transform: scale(1.02);
+  filter: grayscale(80%);
 }
 
 .item__perfil span {
