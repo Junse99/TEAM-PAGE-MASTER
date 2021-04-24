@@ -11,7 +11,7 @@ body {
 }
 
 .container{
-  height: auto;
+  height: 100vh;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -89,7 +89,7 @@ body {
 }
 
 .container__footer p{
-  margin: auto;
+  padding: 2rem;
   font-family: 'Poppins';
   font-size: 14px;
   color: #A9A9A9;
