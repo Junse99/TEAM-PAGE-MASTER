@@ -1,5 +1,5 @@
 
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
 
 
@@ -52,9 +52,40 @@ body {
 
 .container__body{
   display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 6rem 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6rem 3rem;
   margin: 6rem 0;
+}
+
+.perfil--grid{
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+
+.perfil--grid span{ 
+  writing-mode: vertical-lr;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+  font-style: normal;
+  padding-left: .5rem;
+}
+
+.perfil--grid img{
+  width: 100%;
+  transition: filter ease-in-out .6s,  transform ease-in-out .6s;
+}
+
+.perfil--grid img:hover {
+  transform: scale(1.02);
+  filter: grayscale(80%);
+}
+
+.item__perfil p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
 }
 
 .item__perfil:nth-child(2){
@@ -63,37 +94,6 @@ body {
 
 .item__perfil:nth-child(5){
   margin-top: 4rem;
-}
-
-.item__perfil{
-  position: relative;
-
-}
-
-.item__perfil img {
-  width: 238px;
-  height: 347px;
-  transition: filter ease-in-out .6s,  transform ease-in-out .6s;
-
-}
-
-.item__perfil img:hover {
-  transform: scale(1.02);
-  filter: grayscale(80%);
-}
-
-.item__perfil span {
-  font-size: 12px;
-  line-height: 16px;
-  display: block;
-  transform: rotate(90deg) translate(-244px, -120px);
-}
-
-.item__perfil p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 27px;
 }
 
 .container__footer p{
@@ -126,18 +126,13 @@ body {
 
   .container__body{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     gap: 6rem 1rem;
     margin: 6rem 0;
   }
 
-  .item__perfil img{
-    width: 90%;
-    height: 55vw;
-  }
-
-  .item__perfil span {
-    transform: rotate(90deg) translate(-42vw, -20vw);
+  .perfil--grid span{ 
+    padding-left: 0rem;
   }
 
   .item__perfil:nth-child(even){
@@ -150,3 +145,5 @@ body {
 
 
 }
+
+
